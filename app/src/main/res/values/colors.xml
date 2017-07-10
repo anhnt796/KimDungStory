@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background">#ff212121</color>
+    <color name="menu_1">#ffd03136</color>
+    <color name="menu_2">#ffbb2f4c</color>
+    <color name="menu_3">#ffab2e5d</color>
+    <color name="menu_4">#ff9a2c6f</color>
+    <color name="menu_5">#ff8b2b7f</color>
+    <color name="menu_6">#ff7c298f</color>
+    <color name="menu_7">#ff6e289e</color>
+    <color name="menu_8">#ff5d27b0</color>
+    <color name="menu_9">#ff5526b8</color>
+    <!--bonus-->
+    <color name="menu_10">#ff4d25c0</color>
+    <color name="menu_11">#ff4124c8</color>
+    <color name="menu_12">#ff3423d0</color>
+    <color name="menu_13">#ff2222d8</color>
+    <color name="menu_14">#ff1d21e0</color>
+    <color name="white">#ffffffff</color>
+    <color name="black_opa">#80000000</color>
+    <color name="gray">#9a9a9a</color>
+    <color name="yellow">#f4eb6e</color>
+</resources>

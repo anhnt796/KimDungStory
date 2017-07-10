@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_check"
+            android:icon="@drawable/ic_menu_check"
+            android:title="@string/menu_check" />
+        <item
+            android:id="@+id/nav_uncheck"
+            android:icon="@drawable/ic_menu_uncheck"
+            android:title="@string/menu_uncheck" />
+        <item
+            android:id="@+id/nav_reload"
+            android:icon="@drawable/ic_menu_reload"
+            android:title="@string/menu_reload" />
+        <item
+            android:id="@+id/nav_check_2"
+            android:icon="@drawable/ic_menu_check"
+            android:title="Kiểm tra một đoạn văn" />
+        <item android:title=""/>
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/menu_share" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_send" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_about"
+            android:title="@string/menu_about" />
+    </group>
+
+</menu>

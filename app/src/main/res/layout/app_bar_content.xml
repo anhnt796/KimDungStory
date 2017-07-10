@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/gr_mode_title"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <jp.wasabeef.richeditor.RichEditor
+        android:layout_below="@+id/appbar"
+        android:layout_above="@+id/btn_layout"
+        android:id="@+id/editor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <dev.anhnt.kimdung.ui.SAutoBgButton
+            android:id="@+id/btn_previous"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_open_file"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:text="@string/button_previous_chapter" />
+
+        <dev.anhnt.kimdung.ui.SAutoBgButton
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_open_file"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:text="@string/button_next_chapter" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Truyện Kim Dung</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_text1">Ỷ Thiên Đồ Long Ký</string>
+    <string name="menu_text2">Tiếu Ngạo Giang Hồ</string>
+    <string name="menu_text3">Võ Lâm Ngũ Bá</string>
+    <string name="menu_text4">Thư Kiếm Ân Cừu Lục</string>
+    <string name="menu_text5">Thần Điêu Hiệp Lữ</string>
+    <string name="menu_text6">Thiên Long Bát Bộ</string>
+    <string name="menu_text7">Thần Điêu Đại Hiệp</string>
+    <string name="menu_text8">Phi Hồ Ngoại Truyện</string>
+    <string name="menu_text10">Lộc Đỉnh Ký</string>
+    <string name="menu_text9">Lục Mạch Thần Kiếm</string>
+    <string name="menu_text11">Hiệp Khách Hành</string>
+    <string name="menu_text12">Cô Gái Đồ Long</string>
+    <string name="menu_text13">Anh Hùng Xạ Điêu</string>
+    <string name="menu_text14">Liên Thành Quyết - Hàn Giang Nhạn</string>
+
+    <string name="menu_check">Kiểm tra chính tả</string>
+    <string name="menu_uncheck">Bỏ đánh dấu lỗi</string>
+    <string name="menu_reload">Tải lại dữ liệu gốc</string>
+    <string name="menu_share">Chia sẻ ứng dụng</string>
+    <string name="menu_send">Gửi phản hồi</string>
+    <string name="menu_about">Về chúng tôi</string>
+    <string name="menu_search">Tìm kiếm văn bản</string>
+    <string name="menu_voice">Tìm kiếm bằng giọng nói</string>
+
+    <string name="button_next">Go to chapter list</string>
+    <string name="button_previous_chapter">Previous chapter</string>
+    <string name="button_next_chapter">Next chapter</string>
+
+    <string name="search_tip">Chương trình sẽ trả về danh sách chương có nội dung chứa cụm từ dưới đây theo đúng thứ tự.</string>
+    <string name="speech_prompt">Hãy nói gì đó</string>
+    <string name="speech_not_supported">Xin lỗi, thiết bị của bạn không hỗ trợ nhập giọng nói.</string>
+
+    <string name="search_tip_2">Nhập một đoạn văn bản, chương trình sẽ kiểm tra chính tả.</string>
+
+    <string name="email">anhnt796@gmail.com</string>
+    <string name="feedback_subject">Phản hồi về Truyện Kim Dung</string>
+    <string name="feedback_text">Gửi phản hồi: Ứng dụng đọc truyện rất tốt, tôi muốn đóng góp thêm như sau&#8230;</string>
+    <string name="share_url">http://play.google.com/store/apps/details?id=dev.anhnt.kimdung</string>
+</resources>

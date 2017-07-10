@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/gr_mode_title"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ListView
+        android:background="@android:color/white"
+        android:cacheColorHint="#00000000"
+        android:clipChildren="true"
+        android:divider="@android:color/black"
+        android:dividerHeight="1px"
+        android:fadingEdge="horizontal"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="true"
+        android:id="@+id/listview"
+        android:layout_below="@+id/appbar"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:overScrollMode="always" />
+    <!--android:layout_above="@+id/progress_frame"-->
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/music_hint_layout"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:visibility="visible">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/music_hint"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<FrameLayout-->
+        <!--android:background="@android:color/white"-->
+        <!--android:id="@id/progress_frame"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="match_parent" />-->
+
+</RelativeLayout>

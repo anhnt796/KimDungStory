@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <RelativeLayout
+                android:id="@+id/header_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/kimdung" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/header"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="Kim Dung Truyện"
+                    android:textColor="@color/white"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button_menu01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_menu_button1"
+                android:drawableLeft="@drawable/ic_menu1"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/ic_arrow"
+                android:gravity="center|left"
+                android:padding="8dp"
+                android:text="@string/menu_text1"
+                android:textAppearance="@style/menu_text_style" />
+
+            <Button
+                android:id="@+id/button_menu02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_menu_button2"
+                android:drawableLeft="@drawable/ic_menu1"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/ic_arrow"
+                android:gravity="center|left"
+                android:padding="8dp"
+                android:text="@string/menu_text2"
+                android:textAppearance="@style/menu_text_style" />
+
+            <Button
+                android:id="@+id/button_menu03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_menu_button3"
+                android:drawableLeft="@drawable/ic_menu1"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/ic_arrow"
+                android:gravity="center|left"
+                android:padding="8dp"
+                android:text="@string/menu_text3"
+                android:textAppearance="@style/menu_text_style" />
+
+            <Button
+                android:id="@+id/button_menu04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_menu_button4"
+                android:drawableLeft="@drawable/ic_menu1"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/ic_arrow"
+                android:gravity="center|left"
+                android:padding="8dp"
+                android:text="@string/menu_text4"
+                android:textAppearance="@style/menu_text_style" />
+
+            <Button
+                android:id="@+id/button_menu05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_menu_button5"
+                android:drawableLeft="@drawable/ic_menu1"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/ic_arrow"
+                android:gravity="center|left"
+                android:padding="8dp"
+                android:text="@string/menu_text5"
+                android:textAppearance="@style/menu_text_style" />
+
+            <Button
+                android:id="@+id/button_menu06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_menu_button6"
+                android:drawableLeft="@drawable/ic_menu1"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/ic_arrow"
+                android:gravity="center|left"
+                android:padding="8dp"
+                android:text="@string/menu_text6"
+                android:textAppearance="@style/menu_text_style" />
+
+            <Button
+                android:id="@+id/button_menu07"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_menu_button7"
+                android:drawableLeft="@drawable/ic_menu1"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/ic_arrow"
+                android:gravity="center|left"
+                android:padding="8dp"
+                android:text="@string/menu_text7"
+                android:textAppearance="@style/menu_text_style" />
+
+            <Button
+                android:id="@+id/button_menu08"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_menu_button8"
+                android:drawableLeft="@drawable/ic_menu1"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/ic_arrow"
+                android:gravity="center|left"
+                android:padding="8dp"
+                android:text="@string/menu_text8"
+                android:textAppearance="@style/menu_text_style" />
+
+            <Button
+                android:id="@+id/button_menu09"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_menu_button9"
+                android:drawableLeft="@drawable/ic_menu1"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/ic_arrow"
+                android:gravity="center|left"
+                android:padding="8dp"
+                android:text="@string/menu_text9"
+                android:textAppearance="@style/menu_text_style" />
+
+            <Button
+                android:id="@+id/button_menu10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_menu_button10"
+                android:drawableLeft="@drawable/ic_menu1"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/ic_arrow"
+                android:gravity="center|left"
+                android:padding="8dp"
+                android:text="@string/menu_text10"
+                android:textAppearance="@style/menu_text_style" />
+
+            <Button
+                android:id="@+id/button_menu11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_menu_button11"
+                android:drawableLeft="@drawable/ic_menu1"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/ic_arrow"
+                android:gravity="center|left"
+                android:padding="8dp"
+                android:text="@string/menu_text11"
+                android:textAppearance="@style/menu_text_style" />
+
+            <Button
+                android:id="@+id/button_menu12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_menu_button12"
+                android:drawableLeft="@drawable/ic_menu1"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/ic_arrow"
+                android:gravity="center|left"
+                android:padding="8dp"
+                android:text="@string/menu_text12"
+                android:textAppearance="@style/menu_text_style" />
+
+            <Button
+                android:id="@+id/button_menu13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_menu_button13"
+                android:drawableLeft="@drawable/ic_menu1"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/ic_arrow"
+                android:gravity="center|left"
+                android:padding="8dp"
+                android:text="@string/menu_text13"
+                android:textAppearance="@style/menu_text_style" />
+
+            <Button
+                android:id="@+id/button_menu14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_menu_button14"
+                android:drawableLeft="@drawable/ic_menu1"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/ic_arrow"
+                android:gravity="center|left"
+                android:padding="8dp"
+                android:text="@string/menu_text14"
+                android:textAppearance="@style/menu_text_style" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
