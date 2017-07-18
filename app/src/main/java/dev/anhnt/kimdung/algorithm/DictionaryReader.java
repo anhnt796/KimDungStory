@@ -11,14 +11,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class DictionaryReader {
+
     private Map<String, Integer> dictionary = new HashMap<String, Integer>();
+
     public DictionaryReader() {
     }
 
-    public DictionaryReader(Context context, String dictionaryFile) throws IOException
-    {
+    public DictionaryReader(Context context, String dictionaryFile) throws IOException {
         LoadDictionary(context, dictionaryFile);
     }
+
     public void LoadDictionary(Context context, String dictionaryFile) throws IOException {
         InputStream inputStream = context.getAssets().open(dictionaryFile);
         BufferedReader in = new BufferedReader(new InputStreamReader(inputStream, Charset.forName("UTF-8")));
@@ -28,7 +30,6 @@ public class DictionaryReader {
             String line = str.trim();
             byte ptext[] = line.getBytes(Charset.forName("UTF-8"));
             line = new String(ptext, Charset.forName("UTF-8"));
-
             if (line.contains("#"))
                 line = line.substring(0, line.indexOf("#")).trim();
             if (line.length() > 0)
@@ -37,15 +38,19 @@ public class DictionaryReader {
         in.close();
     }
 
-    public int lookUp(String word)
-    {
+    public int lookUp(String word) {
         if (dictionary.containsKey(word))
             return dictionary.get(word);
         return -1;
     }
 
-    public boolean hasWord(String word)
-    {
+    /**
+     * Phương thức này kiểm tra một từ có trong từ điển không.
+     * @param word Từ cần kiểm tra
+     * @return true nếu word xuất hiện trong từ điển, false nếu không
+     */
+    public boolean hasWord(String word) {
         return dictionary.containsKey(VnStringUtils.toLowerCase(word));
     }
+
 }

@@ -3,6 +3,7 @@ package dev.anhnt.kimdung.dialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 
 import dev.anhnt.kimdung.R;
@@ -12,7 +13,7 @@ public class AboutDialog extends Dialog {
 
     public AboutDialog(final Context context) {
         super(context);
-        requestWindowFeature(1);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.dialog_about);
         setCancelable(false);
         setCanceledOnTouchOutside(true);

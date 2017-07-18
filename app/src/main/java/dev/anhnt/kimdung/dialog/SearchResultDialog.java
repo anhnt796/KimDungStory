@@ -3,6 +3,7 @@ package dev.anhnt.kimdung.dialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -21,7 +22,7 @@ public class SearchResultDialog extends Dialog {
 
     public SearchResultDialog(final Context context) {
         super(context);
-        requestWindowFeature(1);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.dialog_result);
         setCancelable(false);
         setCanceledOnTouchOutside(true);

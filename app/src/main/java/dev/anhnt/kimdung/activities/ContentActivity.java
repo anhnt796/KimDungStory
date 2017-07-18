@@ -31,8 +31,7 @@ import java.util.Set;
 import dev.anhnt.kimdung.R;
 import dev.anhnt.kimdung.algorithm.DictionaryReader;
 import dev.anhnt.kimdung.dialog.AboutDialog;
-import dev.anhnt.kimdung.dialog.SearchDialog;
-import dev.anhnt.kimdung.dialog.SearchDialog2;
+import dev.anhnt.kimdung.dialog.CheckParagraphDialog;
 import dev.anhnt.kimdung.dialog.SearchResultDialog;
 import dev.anhnt.kimdung.models.Chapter;
 import dev.anhnt.kimdung.ui.SAutoBgButton;
@@ -296,8 +295,8 @@ public class ContentActivity extends AppCompatActivity implements NavigationView
             reload();
             Toast.makeText(this, "Xong!", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_check_2) {
-            SearchDialog2 searchDialog = new SearchDialog2(this);
-            searchDialog.setDialogResult(new SearchDialog2.OnSearchDialogResult() {
+            CheckParagraphDialog searchDialog = new CheckParagraphDialog(this);
+            searchDialog.setDialogResult(new CheckParagraphDialog.OnSearchDialogResult() {
                 @Override
                 public void finish(String result) {
                     if (!result.trim().equals("")) {

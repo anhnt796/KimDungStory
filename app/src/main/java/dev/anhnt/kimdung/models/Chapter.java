@@ -1,6 +1,7 @@
 package dev.anhnt.kimdung.models;
 
 public class Chapter {
+
     private int id;
     private String name;
 

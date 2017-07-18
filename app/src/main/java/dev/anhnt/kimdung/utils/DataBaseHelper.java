@@ -5,6 +5,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Environment;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
@@ -14,18 +16,19 @@ import java.util.List;
 import dev.anhnt.kimdung.models.Chapter;
 
 public class DataBaseHelper {
+
     public static final String DB_PATH = Environment.getDataDirectory().getPath() + "/data/dev.anhnt.kimdung/database/";
     public static final String DB_NAME = "kimdung.sqlite";
     private Context context;
     private SQLiteDatabase database;
     private ArrayList<Chapter> listChapterName = new ArrayList<>();
+
     public DataBaseHelper(Context context) {
         copyDatabase(context);
         this.context = context;
     }
 
-
-    private void copyDatabase(Context context){
+    private void copyDatabase(Context context) {
         try {
             InputStream inputStream = context.getAssets().open(DB_NAME);
             File file = new File(DB_PATH + DB_NAME);
@@ -47,16 +50,23 @@ public class DataBaseHelper {
             e.printStackTrace();
         }
     }
+
     public void openDatabase (){
-        database = context.openOrCreateDatabase(DB_PATH + DB_NAME,Context.MODE_APPEND,null);
+        database = context.openOrCreateDatabase(DB_PATH + DB_NAME, Context.MODE_APPEND, null);
     }
+
     public void closeDatabase(){
         database.close();
     }
 
+    /**
+     * Phương thức này đưa ra nội dung của chapter.
+     * @param order Số hiệu của chapter
+     * @return Đoạn văn bản thể hiện nội dung của chapter
+     */
     public String getContent(int order) {
         openDatabase();
-        String result = "";
+        String result = StringUtils.EMPTY;
         String[] selectedColumns = new String[] { Constants.COLUMN_ST_CONTENT };
         Cursor c = database.query(Constants.TABLE_ST, selectedColumns, "deId=?", new String[]{"" + order}, null, null, null);
         c.moveToFirst();
@@ -70,9 +80,14 @@ public class DataBaseHelper {
         return result;
     }
 
+    /**
+     * Phương thức này dùng để đưa ra phần giới thiệu chương/hồi.
+     * @param order Số hiệu của chương/hồi
+     * @return Đoạn văn bản thể hiện phần giới thiệu chương/hồi đó
+     */
     public String getIntroduce(int order) {
         openDatabase();
-        String result = "";
+        String result = StringUtils.EMPTY;
         String[] selectedColumns = new String[] { Constants.COLUMN_KIMDUNG_CONTENT };
         Cursor c;
         switch (order) {
@@ -103,6 +118,11 @@ public class DataBaseHelper {
         return result;
     }
 
+    /**
+     * Phương thức này duyệt danh sách chapter của một chương/hồi.
+     * @param order Số hiệu của chương/hồi
+     * @return Danh sách chapter của chương/hồi đó
+     */
     public List<Chapter> getChapterList(int order) {
         openDatabase();
         String[] selectedColumns = new String[] { Constants.COLUMN_ST_ID, Constants.COLUMN_ST_NAME };
@@ -137,6 +157,12 @@ public class DataBaseHelper {
         return listChapterName;
     }
 
+    /**
+     * Phương thức này kiểm tra xem cụm từ nào đó nằm ở các chapter nào của một chương/hồi.
+     * @param order Số hiệu của chương/hồi
+     * @param search Cụm từ cần kiểm tra
+     * @return Danh sách chapter có cụm từ cần kiểm tra thuộc chương/hồi đó
+     */
     public List<Chapter> getListResults(int order, String search) {
         openDatabase();
         String[] selectedColumns = new String[] { Constants.COLUMN_ST_ID, Constants.COLUMN_ST_NAME };
