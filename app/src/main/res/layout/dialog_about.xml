@@ -10,8 +10,8 @@
         android:layout_marginBottom="@dimen/activity_horizontal_margin"
         android:layout_marginStart="@dimen/activity_vertical_margin"
         android:layout_marginEnd="@dimen/activity_vertical_margin"
-        android:textSize="16dp"
-        android:text="Nguyễn Tuấn Anh 20140179\nPhó Đức Đạt 20140999\nHEDSPI K59\nDatabase: Thầy Nguyễn Tiến Thành"
+        android:textSize="14dp"
+        android:text="@string/about_us"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

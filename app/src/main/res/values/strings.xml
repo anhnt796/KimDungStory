@@ -44,4 +44,7 @@
     <string name="feedback_subject">Phản hồi về Truyện Kim Dung</string>
     <string name="feedback_text">Gửi phản hồi: Ứng dụng đọc truyện rất tốt, tôi muốn đóng góp thêm như sau&#8230;</string>
     <string name="share_url">http://play.google.com/store/apps/details?id=dev.anhnt.kimdung</string>
+
+    <string name="about_us">Nguyễn Tuấn Anh 20140179\nPhó Đức Đạt 20140999\nHEDSPI K59\nDatabase: Thầy Nguyễn Tiến Thành\n\nCopyright © 2017 Hanoi University of Science and Technology. All rights reserved.</string>
+
 </resources>
