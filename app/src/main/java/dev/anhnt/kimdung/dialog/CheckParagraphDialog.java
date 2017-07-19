@@ -23,7 +23,7 @@ public class CheckParagraphDialog extends Dialog {
     public CheckParagraphDialog(final Context context) {
         super(context);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.dialog_search_2);
+        setContentView(R.layout.dialog_check_paragraph);
         setCancelable(false);
         setCanceledOnTouchOutside(true);
         editSearch = (EditText) findViewById(R.id.edit_search);

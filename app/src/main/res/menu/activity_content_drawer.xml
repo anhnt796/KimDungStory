@@ -17,7 +17,7 @@
         <item
             android:id="@+id/nav_check_2"
             android:icon="@drawable/ic_menu_check"
-            android:title="Kiểm tra một đoạn văn" />
+            android:title="@string/menu_check_paragraph" />
         <item android:title=""/>
         <item
             android:id="@+id/nav_share"

@@ -35,27 +35,5 @@
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:overScrollMode="always" />
-    <!--android:layout_above="@+id/progress_frame"-->
-
-    <!--<RelativeLayout-->
-        <!--android:id="@+id/music_hint_layout"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:visibility="visible">-->
-
-        <!--<ImageView-->
-            <!--android:id="@+id/music_hint"-->
-            <!--android:layout_centerHorizontal="true"-->
-            <!--android:layout_centerInParent="true"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_width="wrap_content" />-->
-    <!--</RelativeLayout>-->
-
-    <!--<FrameLayout-->
-        <!--android:background="@android:color/white"-->
-        <!--android:id="@id/progress_frame"-->
-        <!--android:layout_alignParentBottom="true"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_width="match_parent" />-->
 
 </RelativeLayout>

@@ -24,12 +24,15 @@
     <string name="menu_check">Kiểm tra chính tả</string>
     <string name="menu_uncheck">Bỏ đánh dấu lỗi</string>
     <string name="menu_reload">Tải lại dữ liệu gốc</string>
+    <string name="menu_check_paragraph">Kiểm tra một đoạn văn</string>
     <string name="menu_share">Chia sẻ ứng dụng</string>
     <string name="menu_send">Gửi phản hồi</string>
     <string name="menu_about">Về chúng tôi</string>
     <string name="menu_search">Tìm kiếm văn bản</string>
     <string name="menu_voice">Tìm kiếm bằng giọng nói</string>
 
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
     <string name="button_next">Go to chapter list</string>
     <string name="button_previous_chapter">Previous chapter</string>
     <string name="button_next_chapter">Next chapter</string>
