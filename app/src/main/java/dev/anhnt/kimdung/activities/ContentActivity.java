@@ -29,6 +29,7 @@ import java.util.List;
 import java.util.Set;
 
 import dev.anhnt.kimdung.R;
+import dev.anhnt.kimdung.activities.base.TextEditorActivity;
 import dev.anhnt.kimdung.algorithm.DictionaryReader;
 import dev.anhnt.kimdung.dialog.AboutDialog;
 import dev.anhnt.kimdung.dialog.CheckParagraphDialog;
@@ -38,7 +39,7 @@ import dev.anhnt.kimdung.ui.SAutoBgButton;
 import dev.anhnt.kimdung.utils.DataBaseHelper;
 import jp.wasabeef.richeditor.RichEditor;
 
-public class ContentActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class ContentActivity extends TextEditorActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private int position;
     private RichEditor mEditor;
@@ -112,39 +113,6 @@ public class ContentActivity extends AppCompatActivity implements NavigationView
         if (position == ChapterListActivity.chapterList.size() - 1) {
             disableNextButton();
         }
-    }
-
-    /**
-     * Phương thức này xóa html tags trong một đoạn string
-     * @param html Dữ liệu vào
-     * @return Đoạn string không chứa html tags
-     */
-    private String stripHtml(String html) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            return Html.fromHtml(html, Html.FROM_HTML_MODE_LEGACY).toString();
-        } else {
-            return Html.fromHtml(html).toString();
-        }
-    }
-
-    /**
-     * Phương thức này tách các từ trong một đoạn văn thành một tập hợp (các từ không trùng lặp).
-     * @param text Đoạn văn bản đầu vào
-     * @return Tập hợp các từ trong đoạn văn
-     */
-    private static Set<String> getWords(String text) {
-        Set<String> words = new HashSet<>();
-        BreakIterator breakIterator = BreakIterator.getWordInstance();
-        breakIterator.setText(text);
-        int lastIndex = breakIterator.first();
-        while (BreakIterator.DONE != lastIndex) {
-            int firstIndex = lastIndex;
-            lastIndex = breakIterator.next();
-            if (lastIndex != BreakIterator.DONE && Character.isLetterOrDigit(text.charAt(firstIndex))) {
-                words.add(text.substring(firstIndex, lastIndex));
-            }
-        }
-        return words;
     }
 
     private void check() {
